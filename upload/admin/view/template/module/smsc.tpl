@@ -62,10 +62,9 @@
                                     <label class="col-sm-2 control-label" for="input-status"><?php echo $entry_status; ?></label>
                                     <div class="col-sm-10">
                                         <select name="smsc_status" id="input-status" class="form-control">
-
-                                            <option value="active"<?php print $smsc_status=='active' ? ' selected': ''; ?>><?php echo $text_enabled; ?></option>
-                                            <option value="demo"<?php print $smsc_status=='demo' ? ' selected': ''; ?>><?php echo $text_demo; ?></option>
                                             <option value="disabled"<?php print $smsc_status=='disabled' ? ' selected': ''; ?>><?php echo $text_disabled; ?></option>
+                                            <option value="demo"<?php print $smsc_status=='demo' ? ' selected': ''; ?>><?php echo $text_demo; ?></option>
+                                            <option value="active"<?php print $smsc_status=='active' ? ' selected': ''; ?>><?php echo $text_enabled; ?></option>
                                         </select>
 
                                         <div id="smsc-status-demo-info-block" class="help-block" style="display: none;">
